@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baran INCEISCI - Portfolio</title>
+    <style>
+        /* General Design Settings */
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            line-height: 1.6; 
+            color: #333; 
+            margin: 0; 
+            padding: 0; 
+            background-color: #f8f9fa; 
+        }
+        header { 
+            background: #2c3e50; 
+            color: #ffffff; 
+            padding: 3rem 0; 
+            text-align: center; 
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            position: relative;
+        }
+        
+        /* Language Switcher */
+        .lang-switch {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+        }
+        .lang-switch a {
+            color: #ffffff;
+            text-decoration: none;
+            border: 1px solid #18bc9c;
+            padding: 6px 12px;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            background-color: rgba(24, 188, 156, 0.2);
+        }
+        .lang-switch a:hover {
+            background-color: #18bc9c;
+            color: #fff;
+        }
+
+        header h1 { 
+            margin: 0; 
+            font-size: 2.8rem; 
+            letter-spacing: 1px;
+        }
+        header p { 
+            margin: 10px 0 20px 0; 
+            font-size: 1.2rem; 
+            color: #18bc9c;
+        }
+        .contact-info a, .contact-info span { 
+            color: #ecf0f1; 
+            text-decoration: none; 
+            margin: 0 15px; 
+            font-size: 0.95rem;
+        }
+        .contact-info a:hover {
+            color: #18bc9c;
+        }
+        
+        /* Content Container */
+        .container { 
+            max-width: 900px; 
+            margin: -30px auto 40px auto; 
+            background: #ffffff; 
+            padding: 40px; 
+            border-radius: 8px; 
+            box-shadow: 0 8px 16px rgba(0,0,0,0.05); 
+        }
+        h2 { 
+            border-bottom: 2px solid #18bc9c; 
+            padding-bottom: 10px; 
+            color: #2c3e50; 
+            margin-top: 40px; 
+        }
+        h2:first-child {
+            margin-top: 0;
+        }
+
+        /* Work and Education */
+        .item-box { 
+            margin-bottom: 30px; 
+        }
+        .item-header { 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .item-title { 
+            font-weight: bold; 
+            font-size: 1.2rem; 
+            color: #2c3e50;
+        }
+        .item-date {
+            font-size: 0.9rem;
+            color: #7f8c8d;
+            background: #ecf0f1;
+            padding: 4px 10px;
+            border-radius: 4px;
+        }
+        .company { 
+            font-style: italic; 
+            color: #18bc9c; 
+            margin-top: 5px;
+            font-weight: 600;
+        }
+        ul { 
+            margin-top: 15px; 
+            padding-left: 20px; 
+            color: #555;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+
+        /* Skills */
+        .skills-category { 
+            margin-bottom: 15px; 
+            background: #fdfdfd;
+            border: 1px solid #eee;
+            padding: 15px;
+            border-radius: 6px;
+        }
+        .skills-category strong { 
+            display: inline-block; 
+            width: 180px;
+            color: #2c3e50;
+        }
+
+        /* References */
+        .reference-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .reference { 
+            background: #f8f9fa;
+            padding: 20px;
+            border-left: 4px solid #18bc9c;
+            border-radius: 4px;
+        }
+        .reference strong {
+            font-size: 1.1rem;
+            color: #2c3e50;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .item-header { flex-direction: column; align-items: flex-start; }
+            .item-date { margin-top: 10px; }
+            .reference-grid { grid-template-columns: 1fr; }
+            .skills-category strong { width: auto; display: block; margin-bottom: 5px; }
+            .lang-switch { top: 10px; right: 10px; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="lang-switch">
+        <a href="index.html">🇹🇷 Türkçe</a>
+    </div>
+    <h1>Baran INCEISCI</h1> <p>System Administrator | Product Manager</p>
+    <div class="contact-info">
+        <a href="mailto:baran@inceisci.com">baran@inceisci.com</a> <span>+90 534 554 5802</span> <a href="https://linkedin.com/in/barancsc" target="_blank">LinkedIn</a> </div>
+</header>
+
+<div class="container">
+    <h2>Professional Experience</h2> <div class="item-box">
+        <div class="item-header">
+            <span class="item-title">System Administrator</span> <span class="item-date">Mar 2025 - Present</span> </div>
+        <div class="company">Yüksel Proje Inc.</div> <ul>
+            <li>Installed, configured, and maintained Windows and Linux-based servers. </li>
+            <li>Managed corporate network infrastructure (LAN/WAN, VPN, DNS, DHCP) and firewalls to ensure continuous connectivity and security. </li>
+            <li>Oversaw user accounts, access controls, and password policies. </li>
+            <li>Applied patches and updates to remediate vulnerabilities and strengthen system security. </li>
+            <li>Delivered end-user support and resolved technical issues in a timely manner. </li>
+            <li>Administered Microsoft Exchange and Office 365 email systems. </li>
+            <li>Utilized Manage Engine products for network monitoring, Active Directory management, incident tracking, and IT helpdesk operations. </li>
+        </ul>
+    </div>
+
+    <div class="item-box">
+        <div class="item-header">
+            <span class="item-title">Product Manager & Senior Network Security Engineer</span> <span class="item-date">Nov 2011 - Nov 2024</span> </div>
+        <div class="company">Labris Networks</div> <ul>
+            <li>Led the development, enhancement, and certification processes of Labris products (UTM, MNG, Harpp). </li>
+            <li>Collected customer requirements, planned product development, and coordinated cross-functional teams. </li>
+            <li>Conducted acceptance testing, quality assurance, and feedback evaluation. </li>
+            <li>Managed product backlogs, tasks, and roadmaps using Jira, Agile, and Confluence. </li>
+            <li>Deployed, configured, upgraded, and supported Labris security solutions for clients. </li>
+            <li>Implemented and maintained solutions such as High Availability, centralized management, logging, firewall, VPN, IDS/IPS, and web content filtering. </li>
+        </ul>
+    </div>
+
+    <h2>Education</h2> <div class="item-box">
+        <div class="item-header">
+            <span class="item-title">Master's Degree - Digital Forensics</span> <span class="item-date">Feb 2024 - Present</span> </div>
+        <div class="company">Gazi University, Institute of Informatics</div> </div>
+    
+    <div class="item-box">
+        <div class="item-header">
+            <span class="item-title">Bachelor's Degree - Management Information Systems</span> <span class="item-date">Oct 2020 - Aug 2023</span> </div>
+        <div class="company">Anadolu University</div> </div>
+
+    <h2>Skills</h2> <div class="skills-category">
+        <strong>Networking:</strong> TCP/IP, Routing (OSPF, BGP), VLAN, Subnetting, NAT, High Availability, SSL VPN, IDS/IPS, Iptables, Backup </div>
+    <div class="skills-category">
+        <strong>Firewalls:</strong> Labris, Fortinet </div>
+    <div class="skills-category">
+        <strong>Monitoring & Analysis:</strong> Wireshark, Solar Winds </div>
+    <div class="skills-category">
+        <strong>Virtualization:</strong> VMWare, VirtualBox, Proxmox </div>
+    <div class="skills-category">
+        <strong>Operating Systems:</strong> Windows, Windows Server, Unix/Linux, macOS </div>
+
+    <h2>References</h2> <div class="reference-grid">
+        <div class="reference">
+            <strong>Eren Mustafa Kesdi</strong><br> Mor Teknoloji<br> Phone: +90 505 857 50 18<br> <a href="mailto:eren@morteknoloji.com">eren@morteknoloji.com</a> </div>
+        <div class="reference">
+            <strong>Fatih Karatana</strong><br> TUSAŞ<br> Phone: +90 533 477 24 47<br> <a href="mailto:fatih@karatana.com">fatih@karatana.com</a> </div>
+    </div>
+</div>
+
+</body>
+</html>
