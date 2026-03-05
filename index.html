@@ -20,220 +20,30 @@
             padding: 3rem 0; 
             text-align: center; 
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-        header h1 { 
-            margin: 0; 
-            font-size: 2.8rem; 
-            letter-spacing: 1px;
-        }
-        header p { 
-            margin: 10px 0 20px 0; 
-            font-size: 1.2rem; 
-            color: #18bc9c;
-        }
-        .contact-info a, .contact-info span { 
-            color: #ecf0f1; 
-            text-decoration: none; 
-            margin: 0 15px; 
-            font-size: 0.95rem;
-        }
-        .contact-info a:hover {
-            color: #18bc9c;
+            position: relative; /* Dil butonu için eklendi */
         }
         
-        /* İçerik Konteyneri */
-        .container { 
-            max-width: 900px; 
-            margin: -30px auto 40px auto; 
-            background: #ffffff; 
-            padding: 40px; 
-            border-radius: 8px; 
-            box-shadow: 0 8px 16px rgba(0,0,0,0.05); 
+        /* Dil Değiştirme Butonu */
+        .lang-switch {
+            position: absolute;
+            top: 20px;
+            right: 30px;
         }
-        h2 { 
-            border-bottom: 2px solid #18bc9c; 
-            padding-bottom: 10px; 
-            color: #2c3e50; 
-            margin-top: 40px; 
-        }
-        h2:first-child {
-            margin-top: 0;
-        }
-
-        /* İş ve Eğitim Bölümleri */
-        .item-box { 
-            margin-bottom: 30px; 
-        }
-        .item-header { 
-            display: flex; 
-            justify-content: space-between; 
-            align-items: center;
-            flex-wrap: wrap;
-        }
-        .item-title { 
-            font-weight: bold; 
-            font-size: 1.2rem; 
-            color: #2c3e50;
-        }
-        .item-date {
+        .lang-switch a {
+            color: #ffffff;
+            text-decoration: none;
+            border: 1px solid #18bc9c;
+            padding: 6px 12px;
+            border-radius: 4px;
             font-size: 0.9rem;
-            color: #7f8c8d;
-            background: #ecf0f1;
-            padding: 4px 10px;
-            border-radius: 4px;
+            transition: all 0.3s ease;
+            background-color: rgba(24, 188, 156, 0.2);
         }
-        .company { 
-            font-style: italic; 
-            color: #18bc9c; 
-            margin-top: 5px;
-            font-weight: 600;
-        }
-        ul { 
-            margin-top: 15px; 
-            padding-left: 20px; 
-            color: #555;
-        }
-        li {
-            margin-bottom: 8px;
+        .lang-switch a:hover {
+            background-color: #18bc9c;
+            color: #fff;
         }
 
-        /* Beceriler */
-        .skills-category { 
-            margin-bottom: 15px; 
-            background: #fdfdfd;
-            border: 1px solid #eee;
-            padding: 15px;
-            border-radius: 6px;
-        }
-        .skills-category strong { 
-            display: inline-block; 
-            width: 170px;
-            color: #2c3e50;
-        }
-
-        /* Referanslar */
-        .reference-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-        }
-        .reference { 
-            background: #f8f9fa;
-            padding: 20px;
-            border-left: 4px solid #18bc9c;
-            border-radius: 4px;
-        }
-        .reference strong {
-            font-size: 1.1rem;
-            color: #2c3e50;
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            .item-header { flex-direction: column; align-items: flex-start; }
-            .item-date { margin-top: 10px; }
-            .reference-grid { grid-template-columns: 1fr; }
-            .skills-category strong { width: auto; display: block; margin-bottom: 5px; }
-        }
-    </style>
-</head>
-<body>
-
-<header>
-    <h1>Baran İnceişçi [cite: 2]</h1>
-    <p>Sistem Yöneticisi [cite: 13] | Ürün Yöneticisi [cite: 26]</p>
-    <div class="contact-info">
-        <a href="mailto:baran@inceisci.com">baran@inceisci.com [cite: 1]</a>
-        <span>+90 534 554 5802 [cite: 3]</span>
-        <a href="https://linkedin.com/in/barancsc/" target="_blank">LinkedIn [cite: 14]</a>
-    </div>
-</header>
-
-<div class="container">
-    <h2>İş Deneyimi [cite: 11]</h2>
-    
-    <div class="item-box">
-        <div class="item-header">
-            <span class="item-title">Sistem Yöneticisi [cite: 13]</span>
-            <span class="item-date">Mart 2025 - Devam ediyor [cite: 17]</span>
-        </div>
-        <div class="company">Yüksel Proje A. Ş. [cite: 12]</div>
-        <ul>
-            <li>Windows ve Linux tabanlı sunucuların kurulumu, yapılandırılması ve sürekliliğinin sağlanması. [cite: 18]</li>
-            <li>Şirket ağı (LAN/WAN, VPN, DNS, DHCP) ve güvenlik duvarlarının yönetimi ile kesintisiz iletişim altyapısının korunması. [cite: 19]</li>
-            <li>Kullanıcı hesapları, erişim yetkileri ve şifre politikalarının yönetimi. [cite: 20]</li>
-            <li>Güvenlik açıklarının kapatılması için yamaların (patch management) uygulanması ve saldırılara karşı sistem güvenliğinin sağlanması. [cite: 21]</li>
-            <li>Çalışanların teknik sorunlarına hızlı çözüm sunarak kullanıcı desteği sağlanması. [cite: 22]</li>
-            <li>Microsoft Exchange ve Office 365 e-posta sistemlerinin kurulumu ve idamesi. [cite: 23]</li>
-            <li>ManageEngine ürünleri kullanılarak ağ izleme, aktif dizin yönetimi, olay takibi ve IT yardım masası süreçlerinin etkin yönetimi. [cite: 24]</li>
-        </ul>
-    </div>
-
-    <div class="item-box">
-        <div class="item-header">
-            <span class="item-title">Ürün Yöneticisi / Kıdemli Ağ Güvenliği Mühendisi [cite: 26]</span>
-            <span class="item-date">Kasım 2011 - Kasım 2024 [cite: 27]</span>
-        </div>
-        <div class="company">Labris Networks [cite: 25]</div>
-        <ul>
-            <li>Labris ürünlerinin (UTM, MNG, Harpp) geliştirilmesi, iyileştirilmesi ve sertifikasyon süreçlerinin yönetimi. [cite: 28]</li>
-            <li>Müşteri gereksinimlerinin analizi, ürün geliştirme sürecinin planlanması ve ekip koordinasyonu. Kabul testleri, kalite kontrol süreçleri ve kullanıcı geri bildirimlerinin değerlendirilmesi. [cite: 29]</li>
-            <li>Jira, Agile ve Confluence araçlarıyla backlog yönetimi, görev takibi ve yol haritası oluşturulması. [cite: 30]</li>
-            <li>Labris ürünlerinin kurulumu, yapılandırılması, yükseltme, izleme ve müşteri desteği sağlanması. [cite: 31]</li>
-            <li>High Availability, merkezi yönetim, loglama, firewall, VPN, IDS/IPS, web içerik filtreleme gibi çözümlerin devreye alınması ve teknik sorunların çözümü. [cite: 32]</li>
-        </ul>
-    </div>
-
-    <h2>Eğitim [cite: 4]</h2>
-    <div class="item-box">
-        <div class="item-header">
-            <span class="item-title">Adli Bilişim Yüksek Lisans [cite: 5, 7]</span>
-            <span class="item-date">Şubat 2024 - Devam Ediyor [cite: 15]</span>
-        </div>
-        <div class="company">Gazi Üniversitesi, Bilişim Enstitüsü [cite: 6]</div>
-    </div>
-    
-    <div class="item-box">
-        <div class="item-header">
-            <span class="item-title">Yönetim Bilişim Sistemleri Lisans [cite: 8, 10]</span>
-            <span class="item-date">Ekim 2020 - Ağustos 2023 [cite: 16]</span>
-        </div>
-        <div class="company">Anadolu Üniversitesi [cite: 9]</div>
-    </div>
-
-    <h2>Beceriler ve Yeterlilikler [cite: 33]</h2>
-    <div class="skills-category">
-        <strong>Ağ Teknolojileri:</strong> TCP/IP, Yönlendirme (OSPF, BGP), VLAN, Alt Ağ Oluşturma, NAT, High Availability, SSL VPN, IDS/IPS, Iptables, Routing, Yedekleme [cite: 34]
-    </div>
-    <div class="skills-category">
-        <strong>Güvenlik Duvarları:</strong> Labris, Fortinet [cite: 35]
-    </div>
-    <div class="skills-category">
-        <strong>İzleme ve Analiz:</strong> Wireshark, SolarWinds [cite: 36]
-    </div>
-    <div class="skills-category">
-        <strong>Sanallaştırma:</strong> VMWare, VirtualBox, Proxmox [cite: 37]
-    </div>
-    <div class="skills-category">
-        <strong>İşletim Sistemleri:</strong> Windows, Windows Serverları, Unix/Linux, MacOS [cite: 38]
-    </div>
-
-    <h2>Referanslar [cite: 39]</h2>
-    <div class="reference-grid">
-        <div class="reference">
-            <strong>Eren Mustafa Kesdi [cite: 40]</strong><br>
-            Mor Teknoloji<br>
-            +90 505 857 50 18<br>
-            <a href="mailto:eren@morteknoloji.com">eren@morteknoloji.com [cite: 41]</a>
-        </div>
-        <div class="reference">
-            <strong>Fatih Karatana [cite: 42]</strong><br>
-            Tusas<br>
-            +90 533 477 24 47<br>
-            <a href="mailto:fatih@karatana.com">fatih@karatana.com [cite: 43]</a>
-        </div>
-    </div>
-</div>
-
-</body>
-</html>
+        header h1 { 
+            margin: 0; 
+            font-size: 2.8rem;
